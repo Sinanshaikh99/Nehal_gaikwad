@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Nehal Kiran Gaikwad - BSc Physiology Student at NMIMS, passionate about neurological factors affecting psychological well-being">
+    <meta name="keywords" content="Nehal Gaikwad, BSc Physiology, NMIMS, Neuroscience, Psychology, Student Portfolio">
+    <meta name="author" content="Nehal Kiran Gaikwad">
+    <title>Nehal Kiran Gaikwad | BSc Physiology Student</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        * { font-family: 'Poppins', sans-serif; scroll-behavior: smooth; }
+        @keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+        .animate-float { animation: float 3s ease-in-out infinite; }
+        .animate-fadeIn { animation: fadeIn 1s ease-out; }
+        .gradient-border { position: relative; }
+        .gradient-border::before { content: ''; position: absolute; inset: -2px; background: linear-gradient(45deg, #9333ea, #ec4899, #3b82f6); border-radius: 1.5rem; z-index: -1; opacity: 0; transition: opacity 0.3s; }
+        .gradient-border:hover::before { opacity: 1; }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-purple-50 via-blue-50 to-pink-50">
+    
+    <!-- Navigation -->
+    <nav class="fixed w-full top-0 z-50 bg-white/80 backdrop-blur-md shadow-sm">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <a href="#" class="text-2xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
+                    Nehal
+                </a>
+                <div class="hidden md:flex space-x-8 items-center"></div>
+                    <a href="#home" class="nav-link">Home</a>
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#education" class="nav-link">Education</a>
+                    <a href="#skills" class="nav-link">Skills</a>
+                    <a href="#experience" class="nav-link">Experience</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                    <button id="themeToggle" class="p-2 rounded-full hover:bg-purple-100 transition-colors ml-4">
+                        <i class="fas fa-moon text-purple-600"></i>
+                    </button>
+                </div>
+                <div class="md:hidden flex items-center gap-2">
+                    <button id="themeToggleMobile" class="p-2 rounded-full hover:bg-purple-100 transition-colors">
+                        <i class="fas fa-moon text-purple-600"></i>
+                    </button>
+                    <button id="mobileMenuBtn" class="text-purple-600 p-2">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="hidden md:hidden bg-white/95 backdrop-blur-md">
+            <div class="container mx-auto px-6 py-4 flex flex-col space-y-4">
+                <a href="#home" class="nav-link-mobile">Home</a>
+                <a href="#about" class="nav-link-mobile">About</a>
+                <a href="#education" class="nav-link-mobile">Education</a>
+                <a href="#skills" class="nav-link-mobile">Skills</a>
+                <a href="#experience" class="nav-link-mobile">Experience</a>
+                <a href="#contact" class="nav-link-mobile">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center justify-center pt-20 px-6">
+        <div class="container mx-auto text-center">
+            <div class="animate-fade-in">
+                <div class="mb-8 float-animation"></div>
+                    <div class="w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64 mx-auto rounded-full bg-gradient-to-br from-purple-400 via-pink-400 to-blue-400 p-1 shadow-2xl overflow-hidden hover:shadow-3xl transition-all duration-300">
+                        <div class="w-full h-full rounded-full overflow-hidden bg-white">
+                            <img src="assets/images/profile.jpg" alt="Nehal Kiran Gaikwad" class="w-full h-full object-cover" loading="eager">
+                        </div>
+                    </div>
+                </div>
+                <h1 class="text-3xl sm:text-5xl md:text-7xl font-bold mb-4 bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600 bg-clip-text text-transparent px-4">
+                    Nehal Kiran Gaikwad
+                </h1>
+                <p class="text-xl sm:text-2xl md:text-3xl text-gray-700 mb-4">BSc Physiology Student</p>
+                <p class="text-base sm:text-lg md:text-xl text-gray-600 mb-8 max-w-2xl mx-auto px-4">
+                    Exploring the fascinating connection between brain and behavior, with a passion for understanding neurological factors in psychological well-being
+                </p>
+                <div class="flex flex-col sm:flex-row flex-wrap justify-center gap-4 px-4">
+                    <a href="#contact" class="btn-primary">
+                        <i class="fas fa-envelope mr-2"></i>Get in Touch
+                    </a>
+                    <a href="#about" class="btn-secondary">
+                        <i class="fas fa-user mr-2"></i>Learn More
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 px-6">
+        <div class="container mx-auto max-w-4xl">
+            <h2 class="section-title">About Me</h2>
+            <div class="card">
+                <div class="flex flex-col md:flex-row items-center gap-8">
+                    <div class="w-full md:w-1/3">
+                        <div class="aspect-square rounded-2xl bg-gradient-to-br from-purple-400 via-pink-400 to-blue-400 p-1 shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-300">
+                            <div class="w-full h-full rounded-2xl overflow-hidden bg-white">
+                                <img src="assets/images/profile.jpg" alt="Nehal Kiran Gaikwad" class="w-full h-full object-cover" loading="lazy">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-2/3">
+                        <p class="text-lg text-gray-700 leading-relaxed mb-4">
+                            A motivated BSc Physiology student with a keen interest in neurological factors influencing psychological well-being. Actively involved in academic and cultural activities, with hands-on experience in leadership, event organization, choreography, and event hosting.
+                        </p>
+                        <p class="text-lg text-gray-700 leading-relaxed">
+                            Passionate about learning, collaboration, and creative expression.
+                        </p>
+                        <div class="mt-6 flex flex-wrap gap-3">
+                            <span class="badge badge-purple">
+                                <i class="fas fa-university mr-2"></i>NMIMS
+                            </span>
+                            <span class="badge badge-pink">
+                                <i class="fas fa-microscope mr-2"></i>Physiology
+                            </span>
+                            <span class="badge badge-blue">
+                                <i class="fas fa-brain mr-2"></i>Neuroscience
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="py-20 px-6 bg-gradient-to-br from-purple-50 via-pink-50 to-blue-50">
+        <div class="container mx-auto max-w-6xl">
+            <h2 class="section-title">Education Journey</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- BSc Physiology -->
+                <div class="education-card education-card-purple group">
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-purple-400/20 to-transparent rounded-bl-full"></div>
+                    <div class="relative z-10">
+                        <div class="w-20 h-20 rounded-2xl bg-gradient-to-br from-purple-500 to-purple-700 flex items-center justify-center mb-6 shadow-lg group-hover:scale-110 transition-transform duration-300">
+                            <i class="fas fa-graduation-cap text-white text-3xl"></i>
+                        </div>
+                        <span class="inline-block px-4 py-1.5 bg-purple-100 text-purple-700 rounded-full text-sm font-bold mb-4">
+                            Currently Pursuing
+                        </span>
+                        <h3 class="text-2xl font-bold text-gray-800 mb-3">BSc Physiology</h3>
+                        <p class="text-lg font-semibold text-purple-600 mb-2">NMIMS</p>
+                        <p class="text-gray-600 text-sm leading-relaxed">Narsee Monjee Institute of Management Studies</p>
+                        <div class="mt-6 pt-6 border-t border-purple-200">
+                            <div class="flex items-center gap-2 text-purple-600">
+                                <i class="fas fa-calendar-alt"></i>
+                                <span class="text-sm font-medium">2023 - Present</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 12th HSC -->
+                <div class="education-card education-card-pink group">
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-pink-400/20 to-transparent rounded-bl-full"></div>
+                    <div class="relative z-10">
+                        <div class="w-20 h-20 rounded-2xl bg-gradient-to-br from-pink-500 to-pink-700 flex items-center justify-center mb-6 shadow-lg group-hover:scale-110 transition-transform duration-300">
+                            <i class="fas fa-book-open text-white text-3xl"></i>
+                        </div>
+                        <span class="inline-block px-4 py-1.5 bg-pink-100 text-pink-700 rounded-full text-sm font-bold mb-4">
+                            Completed
+                        </span>
+                        <h3 class="text-2xl font-bold text-gray-800 mb-3">12th (HSC)</h3>
+                        <p class="text-lg font-semibold text-pink-600 mb-2">Ruparel College</p>
+                        <p class="text-gray-600 text-sm leading-relaxed">Higher Secondary Certificate</p>
+                        <div class="mt-6 pt-6 border-t border-pink-200">
+                            <div class="flex items-center gap-2 text-pink-600">
+                                <i class="fas fa-award"></i>
+                                <span class="text-sm font-medium">Science Stream</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 10th SSC -->
+                <div class="education-card education-card-blue group">
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-blue-400/20 to-transparent rounded-bl-full"></div>
+                    <div class="relative z-10">
+                        <div class="w-20 h-20 rounded-2xl bg-gradient-to-br from-blue-500 to-blue-700 flex items-center justify-center mb-6 shadow-lg group-hover:scale-110 transition-transform duration-300">
+                            <i class="fas fa-school text-white text-3xl"></i>
+                        </div>
+                        <span class="inline-block px-4 py-1.5 bg-blue-100 text-blue-700 rounded-full text-sm font-bold mb-4">
+                            Completed
+                        </span>
+                        <h3 class="text-2xl font-bold text-gray-800 mb-3">10th (SSC)</h3>
+                        <p class="text-lg font-semibold text-blue-600 mb-2">Swami Vivekanand School</p>
+                        <p class="text-gray-600 text-sm leading-relaxed">Secondary School Certificate</p>
+                        <div class="mt-6 pt-6 border-t border-blue-200">
+                            <div class="flex items-center gap-2 text-blue-600">
+                                <i class="fas fa-star"></i>
+                                <span class="text-sm font-medium">Foundation Years</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 px-6">
+        <div class="container mx-auto max-w-6xl">
+            <h2 class="section-title">Skills & Strengths</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Leadership -->
+                <div class="skill-card skill-card-purple">
+                    <div class="skill-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Leadership</h3>
+                    <p class="text-gray-600">Guiding teams and organizing events with confidence and vision</p>
+                </div>
+
+                <!-- Creative Thinking -->
+                <div class="skill-card skill-card-pink">
+                    <div class="skill-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Creative Thinking</h3>
+                    <p class="text-gray-600">Bringing innovative ideas to life through choreography and events</p>
+                </div>
+
+                <!-- Critical Thinking -->
+                <div class="skill-card skill-card-blue">
+                    <div class="skill-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Critical Thinking</h3>
+                    <p class="text-gray-600">Analyzing complex problems with a scientific mindset</p>
+                </div>
+
+                <!-- Adaptability -->
+                <div class="skill-card skill-card-mint">
+                    <div class="skill-icon">
+                        <i class="fas fa-sync-alt"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Adaptability</h3>
+                    <p class="text-gray-600">Thriving in diverse situations and embracing new challenges</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-20 px-6 bg-white/50">
+        <div class="container mx-auto max-w-6xl">
+            <h2 class="section-title">Experience & Activities</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Dance Choreography -->
+                <div class="experience-card">
+                    <div class="experience-icon bg-gradient-to-br from-purple-400 to-purple-600">
+                        <i class="fas fa-music"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Dance Choreography</h3>
+                    <p class="text-gray-600 mb-4">
+                        Choreographed and performed in multiple dance performances for college and cultural events, showcasing creativity and teamwork.
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="tag tag-purple">Creativity</span>
+                        <span class="tag tag-purple">Teamwork</span>
+                        <span class="tag tag-purple">Performance</span>
+                    </div>
+                </div>
+
+                <!-- Event Hosting -->
+                <div class="experience-card">
+                    <div class="experience-icon bg-gradient-to-br from-pink-400 to-pink-600">
+                        <i class="fas fa-microphone"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Event Hosting</h3>
+                    <p class="text-gray-600 mb-4">
+                        Hosted multiple academic and cultural events, demonstrating strong communication skills and stage presence.
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="tag tag-pink">Communication</span>
+                        <span class="tag tag-pink">Confidence</span>
+                        <span class="tag tag-pink">Public Speaking</span>
+                    </div>
+                </div>
+
+                <!-- Event Organization -->
+                <div class="experience-card">
+                    <div class="experience-icon bg-gradient-to-br from-blue-400 to-blue-600">
+                        <i class="fas fa-calendar-check"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Event Organization</h3>
+                    <p class="text-gray-600 mb-4">
+                        Organized debates, elocution competitions, and quizzes, managing logistics and ensuring smooth execution.
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="tag tag-blue">Leadership</span>
+                        <span class="tag tag-blue">Planning</span>
+                        <span class="tag tag-blue">Management</span>
+                    </div>
+                </div>
+
+                <!-- Academic Involvement -->
+                <div class="experience-card">
+                    <div class="experience-icon bg-gradient-to-br from-green-400 to-green-600">
+                        <i class="fas fa-flask"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Academic Engagement</h3>
+                    <p class="text-gray-600 mb-4">
+                        Actively participating in academic activities and research, with a focus on neurological factors in psychological well-being.
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="tag tag-mint">Research</span>
+                        <span class="tag tag-mint">Learning</span>
+                        <span class="tag tag-mint">Collaboration</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 px-6">
+        <div class="container mx-auto max-w-4xl">
+            <h2 class="section-title">Get in Touch</h2>
+            <div class="card text-center">
+                <div class="mb-8">
+                    <div class="w-24 h-24 mx-auto rounded-full bg-gradient-to-br from-purple-400 via-pink-400 to-blue-400 flex items-center justify-center shadow-xl">
+                        <i class="fas fa-envelope text-white text-4xl"></i>
+                    </div>
+                </div>
+                <h3 class="text-2xl font-bold text-gray-800 mb-4">Let's Connect!</h3>
+                <p class="text-lg text-gray-600 mb-8">
+                    Feel free to reach out for collaborations, opportunities, or just to say hello!
+                </p>
+                <div class="flex flex-col sm:flex-row flex-wrap justify-center gap-4">
+                    <a href="mailto:nehalgk2007@gmail.com" class="contact-btn contact-btn-purple">
+                        <i class="fas fa-envelope"></i>
+                        <span>Email</span>
+                    </a>
+                    <a href="https://linkedin.com" target="_blank" class="contact-btn contact-btn-blue">
+                        <i class="fab fa-linkedin"></i>
+                        <span>LinkedIn</span>
+                    </a>
+                    <a href="https://instagram.com/itsnehoel" target="_blank" class="contact-btn contact-btn-pink">
+                        <i class="fab fa-instagram"></i>
+                        <span>Instagram</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 px-6 bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600 text-white">
+        <div class="container mx-auto text-center">
+            <p class="text-lg mb-2">© 2025 Nehal Kiran Gaikwad. All rights reserved.</p>
+            <p class="text-sm opacity-90">Made with <i class="fas fa-heart text-pink-300"></i> and passion for neuroscience</p>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTop" class="fixed bottom-8 right-8 w-12 h-12 bg-gradient-to-r from-purple-600 to-pink-600 text-white rounded-full shadow-lg hover:shadow-xl transform hover:scale-110 transition-all duration-300 opacity-0 pointer-events-none z-40">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Custom JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>
